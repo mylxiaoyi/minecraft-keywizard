@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "keywizard",
+  "version": "${version}",
+  "name": "Keywizard Mod",
+  "description": "Keyboard Wizard is simple that makes finding and fixing key bind conflicts a lot easier.\nThanks to MrNerdy42.",
+  "authors": [
+    "CC",
+    "Flechazo"
+  ],
+  "contact": {
+    "sources": "https://github.com/mylxiaoyi/minecraft-keywizard",
+    "fork": "https://github.com/Flechazo098/minecraft-keywizard"
+  },
+  "license": "All Rights Reserved",
+  "icon": "assets/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "xyz.xindi.keywizard.fabric.KeyWizardFabric"
+    ]
+  },
+  "mixins": [
+    "keywizard.mixins.json",
+    "keywizard-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.20.1",
+    "architectury": ">=9.1.12"
+  }
+}
